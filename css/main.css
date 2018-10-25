@@ -187,13 +187,28 @@ main ul li figure figcaption > h3{
 }
 
 @media only screen and (max-width: 600px){
-    aside {
-        width: 100%;
+
+    header h1 {
+        margin:0;
+        font-size: 0.8em;
+        position: relative;
+        top: 0;
+        line-height: 100px;
+        padding: 0 6em;
+        color: #e9e9e9;
+        flex: 50%;
+        align-items: center;
     }
 
+
     main{
-        width: 100%;
+        flex: 100%;
     }
+    aside {
+        flex: 100%;
+    }
+
+
 
     figcaption > h3{
         font-size: 80%;
