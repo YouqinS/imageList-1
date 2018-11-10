@@ -1,0 +1,48 @@
+//code
+
+console.log(`I found the berry: ${document.getElementById("berry").innerHTML}`);
+document.getElementById("berry").style.backgroundColor = "red";
+
+
+const orange = document.querySelector("li[data-foodtype='squishy']"); console.log(`I found the fruit: ${orange.innerHTML}`); orange.style.backgroundColor = "orange";
+
+
+console.log(document.getElementsByTagName("li"));
+
+for(let i = 0; i < document.getElementsByTagName("li").length; i++){ console.log(document.getElementsByTagName("li")[i].innerHTML);   document.getElementsByTagName("li")[i].style.listStyle = "none";document.getElementsByTagName("li")[i].style.width = "100px";
+ if(document.getElementsByTagName("li")[i].innerHTML == "Pear"){document.getElementsByTagName("li")[i].style.backgroundColor = "green"}}; 
+ 
+ document.querySelectorAll("li");
+ 
+ const items = document.querySelectorAll("li"); items.forEach(function(item){ console.log(item.inneHTML);  item.style.border = "1px solid #0000FF"}); 
+
+ 
+ 
+ //from console
+ console.log(`I found the berry: ${document.getElementById("berry").innerHTML}`);
+
+VM1017:1 I found the berry: Strawberry
+undefined
+document.getElementById("berry").style.backgroundColor = "red";
+
+"red"
+const orange = document.querySelector("li[data-foodtype='squishy']"); console.log(`I found the fruit: ${orange.innerHTML}`); orange.style.backgroundColor = "orange";
+
+VM1023:1 I found the fruit: Orange
+"orange"
+console.log(document.getElementsByTagName("li"));
+
+VM1026:1 HTMLCollection(6) [li, li, li, li, li, li#berry, berry: li#berry]
+undefined
+for(let i = 0; i < document.getElementsByTagName("li").length; i++){ console.log(document.getElementsByTagName("li")[i].innerHTML);   document.getElementsByTagName("li")[i].style.listStyle = "none";document.getElementsByTagName("li")[i].style.width = "100px";
+ if(document.getElementsByTagName("li")[i].innerHTML == "Pear"){document.getElementsByTagName("li")[i].style.backgroundColor = "green"}}; 
+VM1029:1 Apple
+VM1029:1 Banana
+VM1029:1 Orange
+VM1029:1 Pear
+VM1029:1 Kiwi
+VM1029:1 Strawberry
+undefined
+document.querySelectorAll("li");
+NodeList(6) [li, li, li, li, li, li#berry]
+ const items = document.querySelectorAll("li"); items.forEach(function(item){ console.log(item.inneHTML);  item.style.border = "1px solid #0000FF"}); 
