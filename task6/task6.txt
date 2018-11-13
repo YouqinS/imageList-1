@@ -1,5 +1,5 @@
-//code
-
+﻿//code
+console.log(document.getElementById("berry"));
 console.log(`I found the berry: ${document.getElementById("berry").innerHTML}`);
 document.getElementById("berry").style.backgroundColor = "red";
 
@@ -19,10 +19,14 @@ for(let i = 0; i < document.getElementsByTagName("li").length; i++){ console.log
  
  
  //from console
+console.log(document.getElementById("berry"));
+VM110:1 <li id=​"berry">​Strawberry​</li>​
+
+
  console.log(`I found the berry: ${document.getElementById("berry").innerHTML}`);
 
 VM1017:1 I found the berry: Strawberry
-undefined
+
 document.getElementById("berry").style.backgroundColor = "red";
 
 "red"
